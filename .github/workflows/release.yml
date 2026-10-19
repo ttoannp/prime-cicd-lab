@@ -26,6 +26,8 @@ jobs:
     # Biên dịch bản Production chính thức
     - name: Build Production Binary
       run: make build
+    - name: Run Unit Tests
+      run: make test
 
     # Đóng gói file chạy thành định dạng nén tiêu chuẩn của Linux (.tar.gz)
     - name: Package Artifact Archive
